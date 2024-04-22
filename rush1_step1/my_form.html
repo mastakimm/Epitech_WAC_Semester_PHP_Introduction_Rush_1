@@ -1,0 +1,103 @@
+<!DOCTYPE html >
+<html lang="fr">
+<head>
+  <title>My_Form</title>
+  <meta charset="UTF-8">
+</head>
+
+
+    <body>
+        <h2>HTML FORM</h2>
+
+        <form method = 'post' action = "/my_form.html">
+
+            <!-- Sexe -->
+            <div>
+              <input type="radio" id="contactChoice1" name="sexe" value="homme" required>
+              <label for="contactChoice1">Homme</label>
+          
+              <input type="radio" id="contactChoice2" name="sexe" value="femme" required>
+              <label for="contactChoice2">Femme</label>
+          
+              <input type="radio" id="contactChoice3" name="sexe" value="autre" required>
+              <label for="contactChoice3">Autre</label>
+            </div>
+
+            <!-- Civilité -->
+            <div>
+              <label for="civil-select">Civilité></span> </label>
+              <select name="civilite" id="civil-select" required>
+                <option value=""> Choix de la civilité</option>
+                <option value="M.">M.</option>
+                <option value="Mme.">Mme.</option>
+              </select>
+            </div>
+
+            <!-- Nom -->
+            <div>
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" pattern="[a-zA-Z]" minlength="2" required>
+            </div>
+
+            <!--le champ pour l'adresse mail-->
+            <div>
+              <label for="email">email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <!--le champ pour le numéro de telephone-->
+            <div>
+              <label for="tel">Telephone</label>
+              <input type="tel" id="tel" name="telephone" required>
+            </div>
+
+            <!-- Website -->
+            <div>
+              <label for="website">L'URL de votre site</label>
+              <input type="url" name="website" id="website" placeholder="https://example.com" size="30" required>
+            </div>
+
+            <!-- date de naissance -->
+            <div>
+                <label for="date_de_naissance">Date de naissance</label>
+                <input type="date" id="date_de_naissance" name="date_de_naissance" min="1901-01-01" max="2022-12-31" required>
+            </div>
+              
+            <!-- Hobbies -->
+            <fieldset>
+              <div>
+                <input type="checkbox" id="jeu_video" required>
+                <label for="jeu_video">Jeu Video</label>
+              </div>
+              <div>
+                <input type="checkbox" id="Cinema" required>
+                <label for="Cinema">Cinema</label>
+              </div>
+              <div>
+                <input type="checkbox" id="lecture" required>
+                <label for="lecture">Lecture</label>
+              </div>
+              <div>
+                <input type="checkbox" id="sport" required>
+                <label for="sport">Sport</label>
+              </div>
+              <div>
+                <input type="checkbox" id="informatique" required>
+                <label for="informatique">Informatique</label>
+              </div>
+            </fieldset>
+
+            <!-- Token -->
+            <div>
+              <input id="token" name="token" type="hidden" value="my first website">
+            </div>
+
+            <!-- button -->
+            <div>
+              <button type="submit">Validation</button>
+            </div>
+          </form>
+    </body>
+
+    </html>
+
